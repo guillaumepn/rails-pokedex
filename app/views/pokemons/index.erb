@@ -1,0 +1,15 @@
+<h1>Mes Pokémons</h1>
+
+<% if @pokemons.any? %>
+
+  <ul>
+    <% @pokemons.each do |pokemon| %>
+      <li><%= pokemon.name %></li>
+    <% end %>
+  </ul>
+
+<% else %>
+
+  <p>Pas de pokéké</p>
+
+<% end %>
